@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mixdown Bible</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+        function smoothScroll () {
+            const desplazar = document.getElementById('seccion_2');
+
+            desplazar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        }
+
+        function smoothScrollTMB () {
+            const desplazarTMB = document.getElementById('landing_section');
+
+            desplazarTMB.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        }
+
+        function searchFilter () {
+            const input = document.getElementById('myInput');
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById('tablaPiola');
+            const article = table.getElementsByClassName('art');
+            document.getElementById('searchFilter');
+
+            for (const articulo of article) {
+                const a = articulo.getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    articulo.style.display = "";
+                    } else {
+                    articulo.style.display = "none";
+                }
+            }
+        }
+
+        function blueFunction () {
+            if (window.matchMedia("(min-width : 480.02px)").matches) {
+            const hover = document.getElementById('basic_square');
+            hover.style.color = "white";
+            }
+        }
+
+        function outBlueFunction () {
+            const hover = document.getElementById('basic_square');
+            hover.style.color = "black";
+        }
+
+        function purpleFunction () {
+            if (window.matchMedia("(min-width : 480.02px)").matches) {
+            const hover = document.getElementById('intermediate_square');
+            hover.style.color = "white";
+            }
+        }
+
+        function outPurpleFunction () {
+            const hover = document.getElementById('intermediate_square');
+            hover.style.color = "black";
+        }
+
+        function redFunction () {
+            if (window.matchMedia("(min-width : 480.02px)").matches) {
+            const hover = document.getElementById('advanced_square');
+            hover.style.color = "white";
+            }
+        }
+
+        function outRedFunction () {
+            const hover = document.getElementById('advanced_square');
+            hover.style.color = "black";
+        }
+
+        function showAll () {
+            const table = document.getElementById('tablaPiola');
+            const articles = table.getElementsByClassName('art');
+
+            for (var article of articles) {
+		        if (article) {
+			    article.style.display = "";
+		        } else {
+			    article.style.display = "none";
+		        }
+	        }
+        }
+
+        function basicLevel () {
+            const table = document.getElementById('tablaPiola');
+            const articles = table.getElementsByClassName('art');
+
+            for (var article of articles) {
+		        if (article.id == "basico") {
+			    article.style.display = "";
+		        } else {
+			    article.style.display = "none";
+		        }
+	        }
+        }
+
+        function mediumLevel () {
+            const table = document.getElementById('tablaPiola');
+            const articles = table.getElementsByClassName('art');
+
+            for (var article of articles) {
+		        if (article.id == "intermedio") {
+                article.style.display = "";
+		        } else {
+                article.style.display = "none";
+		        }
+	        }
+        }
+
+        function advancedLevel () {
+            const table = document.getElementById('tablaPiola');
+            const articles = table.getElementsByClassName('art');
+
+            for (var article of articles) {
+		        if (article.id == "avanzado") {
+                article.style.display = "";
+		        } else {
+                article.style.display = "none";
+		        }
+	        }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header_div">
+            <a class="logo" onclick="smoothScrollTMB()">TMB</a>
+            <form class="search_form">
+                <input type="text" name="search_input" class="buscar" id="myInput" onkeyup="searchFilter()">
+                <img class="lupa" src="imagenes/lupa.svg">
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="landing" id="landing_section">
+            <h1 class="titulo_landing">THE MIXDOWN BIBLE</h1>
+            <h2 class="bajada_landing">INFORMACION ÚTIL Y TIPS PARA MEJORAR TU MEZCLA</h2>
+            <button class="comenzar" onclick="smoothScroll()">
+                <a onclick="smoothScroll()">COMENZAR</a>
+            </button>
+        </div>
+
+        <div class="post_landing" id="seccion_2">
+            <h1 class="titulo_niveles" onclick="showAll()">MIXDOWN</h1>
+            <div class="separador_container">
+                <img src="imagenes/separador.png" class="separador">
+            </div>
+
+            <div class="niveles_container">
+                <div class="niveles">
+                    <div class="basico" onclick="basicLevel()" onmouseover="blueFunction()" onmouseout="outBlueFunction()">
+                        <a id="basic_square">BÁSICO</a>
+                    </div>
+                    <div class="intermedio" onclick="mediumLevel()" onmouseover="purpleFunction()" onmouseout="outPurpleFunction()">
+                        <a id="intermediate_square">INTERMEDIO</a>
+                    </div>
+                    <div class="avanzado" onclick="advancedLevel()" onmouseover="redFunction()" onmouseout="outRedFunction()">
+                        <a id="advanced_square">AVANZADO</a>
+                    </div>
+                </div>
+            </div>
+
+        <div id="tablaPiola">
+            <div class="art" id="basico">
+                <img src="imagenes/basico/automatizaciones/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_basico">
+                        <div class="text">AUTOMATIZACIONES</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/bpm_a_ms/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">BPM A MS</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/compresion/articulo.jpg">
+                <a href="compresion.html">
+                    <div class="overlay_basico">
+                        <div class="text">COMPRESIÓN</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/compresion_multibanda/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">COMPRESIÓN MULTIBANDA</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/delay/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_basico">
+                        <div class="text">DELAY</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/drum_tuning/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">DRUM TUNING</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/efecto_haas/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">EFECTO HAAS</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/eq/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_basico">
+                        <div class="text">EQ</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/gater/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">GATER</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/groove/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">GROOVE</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/maximizer/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">MAXIMIZER</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="avanzado">
+                <img src="imagenes/avanzado/mid_side_eq/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_avanzado">
+                        <div class="text">MID/SIDE EQ</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/mono_y_stereo/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_basico">
+                        <div class="text">MONO Y STEREO</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/noise_transient/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">NOISE TRANSIENT</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="avanzado">
+                <img src="imagenes/avanzado/polaridad_y_fases/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_avanzado">
+                        <div class="text">POLARIDAD Y FASES</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/relleno_de_frecuencias/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_basico">
+                        <div class="text">RELLENO DE FRECUENCIAS</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/resampleo/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">RESAMPLEO</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/resonancias/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">RESONANCIAS</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/reverb/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_basico">
+                        <div class="text">REVERB</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/send_y_return_tracks/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_basico">
+                        <div class="text">SEND Y RETURN TRACKS</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="basico">
+                <img src="imagenes/basico/sidechain/articulo.jpg">
+                <a href="sidechain.html">
+                    <div class="overlay_basico">
+                        <div class="text">SIDECHAIN</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="avanzado">
+                <img src="imagenes/avanzado/sidechain_multibanda/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_avanzado">
+                        <div class="text">SIDECHAIN MULTIBANDA</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="avanzado">
+                <img src="imagenes/avanzado/sidechain_trigger/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_avanzado">
+                        <div class="text">SIDECHAIN TRIGGER</div>
+                    </div>
+                </a>
+            </div>
+            <div class="art" id="intermedio">
+                <img src="imagenes/intermedio/split_de_frecuencias/articulo.jpg">
+                <a href="/">
+                    <div class="overlay_intermedio">
+                        <div class="text">SPLIT DE FRECUENCIAS</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer_container">
+            <p class="footer_data_1">2020, The Mixdown Bible</p>
+            <a class="footer_data_2" href="quienes_somos.html">¿Quiénes somos?</a>
+            <div class="redes_container">
+                <a href="https://www.instagram.com/themixdownbible" class="instagram">
+                    <img src="imagenes/redes/instagram.svg">
+                </a>
+                <a href="https://www.facebook.com/TheMixdownBible" class="facebook">
+                    <img src="imagenes/redes/facebook.svg">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

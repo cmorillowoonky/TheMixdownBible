@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+*
+{box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+/*   ---------- Desktop ----------   */
+
+@media only screen  and (min-width : 480.02px) {
+
+.header_div
+{background-color: #1C1C1C;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 0.8rem 20%;
+z-index: 99;}
+
+.logo
+{font-family: "Poppins";
+color: #FFAC3E;
+font-weight: 800;
+font-size: 25px;
+text-decoration: none;
+cursor: pointer;}
+
+.mixdown
+{font-family: "Poppins";
+color: #FFAC3E;
+font-weight: 800;
+font-size: 25px;
+text-decoration: none;
+cursor: pointer;}
+
+.flecha_atras
+{display: none;}
+
+.lupa
+{width: 15px;
+position: absolute;
+top: 13%;
+right: 1%;}
+
+.search_form
+{background-color: white;
+position: absolute;
+right: 20%;
+border-radius: 5px;}
+
+.buscar
+{background-color: white;
+border-style: none;
+border-radius: 5px;
+font-family: "Poppins";
+font-weight: 600;
+font-size: 15px;
+padding-left: 3%;
+padding-right: 13%;}
+
+.landing
+{text-align: center;}
+
+.post_landing
+{padding-top: 126px;}
+
+.titulo_niveles
+{font-family: "Poppins";
+font-weight: 800;
+color: #FFAC3E;
+font-size: 42px;
+text-align: center;
+margin-bottom: 15px;}
+
+.separador_container
+{text-align: center;}
+
+.separador
+{margin-bottom: 20px;
+width: 20%;}
+
+table
+{margin: auto;
+margin-top: 60px;
+font-family: "Lato";
+border-spacing: 110px 0px;}
+
+.szero
+{text-align: center;
+padding-bottom: 10px;
+position: relative;}
+
+.szero_image
+{border-radius: 50%;
+width: 251px;
+height: 251px;}
+
+#szero
+{position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: none;
+width: 100%;}
+
+.kibbutz
+{text-align: center;
+padding-bottom: 10px;
+position: relative;}
+
+.kibbutz_image
+{border-radius: 50%;
+width: 251px;
+height: 251px;}
+
+#kibbutz
+{position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: none;
+width: 100%;}
+
+.nombres
+{font-size: 18px;
+font-weight: 900;
+color: #6A6A6A;}
+
+.agus
+{text-align: center;
+padding-bottom: 5px;}
+
+.charly
+{text-align: center;
+padding-bottom: 5px;}
+
+.soundcloud
+{font-weight: 400;}
+
+.agus_soundcloud
+{text-align: center;}
+
+.agus_soundcloud a
+{text-decoration: none;
+color: #6A6A6A;}
+
+.charly_soundcloud
+{text-align: center;}
+
+.charly_soundcloud a
+{text-decoration: none;
+color: #6A6A6A;}
+
+.grilla_mobile
+{display: none;}
+
+.texto
+{font-family: "Lato";
+font-weight: 400;
+font-size: 17px;
+line-height: 27px;
+color: #6A6A6A;
+text-align: center;
+margin-top: 66px;
+margin-left: 27%;
+margin-right: 27%;}
+
+.texto_mobile
+{display: none;}
+
+footer
+{margin-top: 75px;
+margin-bottom: 40px;}
+
+hr
+{background-color: #6A6A6A;
+height: 1px;}
+
+.footer_container
+{margin-top: 40px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin-left: 20%;
+margin-right: 20%;}
+
+footer p
+{font-family: "Poppins";
+font-weight: 500;
+font-size: 14px;
+color: #6A6A6A;}
+
+footer a
+{font-family: "Poppins";
+font-weight: 500;
+font-size: 14px;
+color: #6A6A6A;
+text-decoration: none;}
+
+.footer_data_1
+{text-align: left;}
+
+.footer_data_2
+{text-align: center;
+text-decoration: none;}
+
+.redes_container
+{text-align: right;}
+
+.redes_container img
+{width: 5%;}
+
+.instagram
+{padding-right: 7px;}
+
+}
+
+/*   ---------- Mobile ----------   */
+
+@media only screen and (max-width : 480px) {
+
+.header_div
+{background-color: #1C1C1C;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 10%;
+z-index: 99;}
+
+.logo
+{font-family: "Poppins";
+color: #FFAC3E;
+font-weight: 800;
+font-size: 230%;
+text-decoration: none;
+cursor: pointer;
+margin-left: 6%;}
+
+.mixdown
+{display: none;}
+
+.flecha_atras
+{margin-right: 6%;}
+
+.post_landing
+{padding-top: 126px;}
+
+.titulo_niveles
+{font-family: "Poppins";
+font-weight: 800;
+color: #FFAC3E;
+font-size: 9vw;
+text-align: center;
+margin-bottom: 15px;}
+
+.separador_container
+{text-align: center;}
+
+.separador
+{margin-bottom: 20px;
+width: 60%;}
+
+table
+{display: none;}
+
+.grilla_mobile
+{margin-top: 5%;
+text-align: center;
+font-family: "Poppins";
+color: #6A6A6A;}
+
+.imagen_mobile_container
+{margin-bottom: 1.5%;}
+
+.imagen_mobile
+{width: 40%;}
+
+.nombre_mobile
+{font-weight: 800;
+margin-bottom: 0.5%;
+font-size: 4.5vw;}
+
+.agus_soundcloud_mobile
+{margin-bottom: 10%;}
+
+.agus_soundcloud_mobile a
+{font-weight: 400;
+text-decoration: none;
+color: #6A6A6A;
+font-size: 4.5vw;}
+
+.charly_soundcloud_mobile a
+{font-weight: 400;
+text-decoration: none;
+color: #6A6A6A;
+font-size: 4.5vw;}
+
+.charly_soundcloud_mobile
+{margin-bottom: 15%;}
+
+.texto
+{display: none;}
+
+.texto_mobile
+{font-family: "Lato";
+font-weight: 400;
+font-size: 112.5%;
+line-height: 25px;
+color: #6A6A6A;
+text-align: justify;
+margin-left: 8%;
+margin-right: 8%;}
+
+footer
+{margin-top: 80px;
+margin-bottom: 40px;}
+
+hr
+{background-color: #6A6A6A;
+height: 1px;}
+
+.footer_container
+{margin-top: 40px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-left: 7%;
+margin-right: 7%;}
+
+footer a
+{font-family: "Poppins";
+font-weight: 500;
+font-size: 100%;
+color: #6A6A6A;
+text-decoration: none;}
+
+.footer_data_1
+{display: none;}
+
+.footer_data_2
+{text-align: left;
+text-decoration: none;}
+
+.redes_container
+{text-align: right;}
+
+.redes_container img
+{width: 10%;}
+
+.instagram
+{padding-right: 15px;}
+
+}

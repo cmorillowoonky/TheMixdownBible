@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link rel="stylesheet" type="text/css" href="quienes_somos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Mixdown Bible</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+        function showSzero () {
+            const logoSzero = document.getElementById('szero');
+            logoSzero.style.display = "block";
+        }
+
+        function hideSzero () {
+            const logoSzero = document.getElementById('szero');
+            logoSzero.style.display = "none";
+        }
+
+        function showKibbutz () {
+            const logoKibbutz = document.getElementById('kibbutz');
+            logoKibbutz.style.display = "block";
+        }
+
+        function hideKibbutz () {
+            const logoKibbutz = document.getElementById('kibbutz');
+            logoKibbutz.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header_div">
+            <a class="logo" href="index.html">TMB</a>
+            <a class="mixdown" href="index.html#seccion_2">MIXDOWN</a>
+            <a class="flecha_atras" href="index.html#seccion_2"><img src="imagenes/mobile/flecha_atras.svg"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="post_landing" id="seccion_2">
+            <h1 class="titulo_niveles">¿QUIÉNES SOMOS?</h1>
+            <div class="separador_container">
+                <img src="imagenes/separador.png" class="separador">
+            </div>
+        </div>
+
+        <div class="grilla">
+            <table class="personas">
+                <tr>
+                    <td class="szero">
+                        <img src="imagenes/quienes_somos/szero.svg" onmouseover="showSzero()" onmouseout="hideSzero()" class="szero_image">
+                        <img src="imagenes/quienes_somos/szero_logo.svg" class="szero_logo" id="szero">
+                    </td>
+                    <td class="kibbutz">
+                        <img src="imagenes/quienes_somos/kibbutz.svg" onmouseover="showKibbutz()" onmouseout="hideKibbutz()" class="kibbutz_image">
+                        <img src="imagenes/quienes_somos/kibbutz_logo.svg" class="kibbutz_logo" id="kibbutz">
+                    </td>
+                </tr>
+                <tr class="nombres">
+                    <td class="agus">
+                        <span>Agustín Sztrajman</span>
+                    </td>
+                    <td class="charly">
+                        <span>Carlos Morillo</span>
+                    </td>
+                </tr>
+                <tr class="soundcloud">
+                    <td class="agus_soundcloud">
+                        <a href="https://www.soundcloud.com/szerodnb">soundcloud.com/szerodnb</a>
+                    </td>
+                    <td class="charly_soundcloud">
+                        <a href="https://www.soundcloud.com/kibbutz_dnb">soundcloud.com/kibbutz_dnb</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="grilla_mobile">
+            <div class="imagen_mobile_container">
+                <img src="imagenes/quienes_somos/szero.svg" class="imagen_mobile">
+            </div>
+            <div class="nombre_mobile">
+                <p>Agustín Sztrajman</p>
+            </div>
+            <div class="agus_soundcloud_mobile">
+                <a href="https://www.soundcloud.com/szerodnb">soundcloud.com/szerodnb</a>
+            </div>
+            <div class="imagen_mobile_container">
+                <img src="imagenes/quienes_somos/kibbutz.svg" class="imagen_mobile">
+            </div>
+            <div class="nombre_mobile">
+                <p>Carlos Morillo</p>
+            </div>
+            <div class="charly_soundcloud_mobile">
+                <a href="https://www.soundcloud.com/kibbutz_dnb">soundcloud.com/kibbutz_dnb</a>
+            </div>
+        </div>
+
+        <div class="texto">
+            <p>
+                Nuestro objetivo es ayudar a la comunidad de habla hispana a entender y aplicar conceptos relacionados con la mezcla, para así poder mejorar la calidad de sus producciones. Debido a la ausencia de este contenido en español es que surge The Mixdown Bible, una página exclusivamente dedicada a aquellos dispuestos a entrar en el mundo de la mezcla.
+            </p>
+        </div>
+        <div class="texto_mobile">
+            <p>
+                Nuestro objetivo es ayudar a la comunidad de habla hispana a interpretar y aplicar conceptos relacionados con la mezcla, para así poder mejorar la calidad de sus producciones. Debido a la ausencia de este contenido en español es que surge The Mixdown Bible, una página exclusivamente dedicada a aquellos dispuestos a entrar en el mundo de la mezcla.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer_container">
+            <p class="footer_data_1">2020, The Mixdown Bible</p>
+            <a class="footer_data_2" href="quienes_somos.html">¿Quiénes somos?</a>
+            <div class="redes_container">
+                <a href="https://www.instagram.com/themixdownbible" class="instagram">
+                    <img src="imagenes/redes/instagram.svg">
+                </a>
+                <a href="https://www.facebook.com/TheMixdownBible" class="facebook">
+                    <img src="imagenes/redes/facebook.svg">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

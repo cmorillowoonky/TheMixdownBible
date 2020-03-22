@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="articulo.css">
+    <link href="lightbox2-2.11.1/src/css/lightbox.css" rel="stylesheet">
+    <title>The Mixdown Bible</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+        function smoothScrollFooter () {
+            const desplazar = document.getElementById('footer');
+            desplazar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        }
+    </script>
+
+</head>
+
+<body class="body_sidechain">
+    <header>
+        <div class="header_div">
+            <a class="logo" href="index.html">TMB</a>
+            <a class="mixdown" href="index.html#seccion_2">MIXDOWN</a>
+            <a class="flecha_atras" href="index.html#seccion_2"><img src="imagenes/mobile/flecha_atras.svg"></a>
+        </div>
+    </header>
+
+    <div class="titular">
+            <h1 class="titulo">SIDECHAIN</h1>
+        <div class="separador_container">
+            <img src="imagenes/separador.png" class="separador">
+        </div>
+    </div>
+
+    <div class="head_image_container">
+        <img class="head_image" src="imagenes/basico/sidechain/compre_sidechain.jpg"/>
+    </div>
+    
+    <div class="cartelito_container">
+        <a class="fb_blanco" href="https://www.facebook.com/TheMixdownBible">
+            <img src="imagenes/redes/facebook_blanco.svg">
+        </a>
+        <a class="ig_blanco" href="https://www.instagram.com/themixdownbible">
+            <img src="imagenes/redes/instagram_blanco.svg">
+        </a>
+        <a class="cartelito">
+            <img src="imagenes/cartelito.jpg">
+        </a>
+    </div>
+
+    <div class="articulo">
+        <p class="date">Jueves 9 de Enero, 2020&nbsp;<span class="autor"> |&nbsp; Agustín Sztrajman</span></p>
+        <p class="autor_mobile">Agustín Sztrajman</p>
+
+        <article>
+            Con “Sidechain” nos referimos a la técnica en la cual un compresor es activado mediante un disparador externo. ¿Muy complicado? Tratemos de entenderlo mediante un ejemplo.</br></br>
+
+            Imaginemos una situación en donde tenemos 2 señales: una pertenece a un sintetizador manteniendo una nota constante, mientras que la otra pertenece a un redoblante.</br></br>
+           
+            <p class="hide_text">Nuestro objetivo es que la amplitud de la señal proporcionada por el sintetizador disminuya algunos decibeles cada vez que suene el redoblante. Lo que hacemos es asignar un compresor al canal del sintetizador, y mediante el routeo entre ambos canales, activar la opción de Sidechain que tal compresor nos proporciona (no todos los compresores poseen la alternativa de ser utilizados como Sidechain).</p>
+
+                <p>
+                <div class="popup_container">
+                Nuestro objetivo es que la
+                <span class="choose">
+                    amplitud
+                    <span class="popup popup_con_imagen">
+                        <img src="imagenes/hover/amplitud.svg">
+                        La amplitud de un movimiento oscilatorio, ondulatorio o señal electromagnética es una medida de la
+                        variación máxima del desplazamiento u otra magnitud física que varía periódica o cuasiperiódicamente
+                        en el tiempo. Es la distancia entre el punto más alejado de una onda y el punto de equilibrio o medio.
+                    </span>
+                </span>
+                de la señal proporcionada por el sintetizador disminuya algunos decibeles cada vez que suene el redoblante.
+                Lo que hacemos es asignar un compresor al canal del sintetizador, y mediante el routeo entre ambos canales,
+                activar la opción de Sidechain que tal compresor nos proporciona (no todos los compresores poseen la
+                alternativa de ser utilizados como Sidechain).
+                </div>
+                </p>
+                </br>
+        </article>
+
+        <a class="article_image_container" href="imagenes/basico/sidechain/fruity_limiter.jpg" data-lightbox="image-1" data-title="Fruity Limiter - Compresor nativo de FL Studio">
+            <img class="article_image" src="imagenes/basico/sidechain/fruity_limiter.jpg"/>
+        </a>
+
+        <img class="article_image_mobile" src="imagenes/mobile/basico/sidechain/fruity_limiter.jpg"/>
+
+        <article>
+            <p class="subtitle">¿Por qué y en qué casos utilizar el Sidechain?</p></br>
+
+            Su caso más general y evidente será respecto de los elementos percusivos tales como un bombo o un redoblante. Para que estos puedan escucharse adecuadamente a lo largo de una canción sin ser enmascarados por otros sonidos que ocupen un rango similar de frecuencias, deberán hacer uso de esta técnica.</br></br>
+
+            Además, esto atenuará el pico de decibeles resultante cada vez que suenen, dando lugar así a un volumen general más alto.</br></br>
+
+           <p class="subtitle">Uso artístico</p></br>
+
+            Además de ser utilizado por las razones previamente explicadas, se le puede dar un uso estilístico dependiente de los parámetros a aplicar en el compresor.</br></br>
+
+            Particularmente en la música electrónica, se ha hecho popular el efecto de “Pump” en las lineas de bajo. ¿Cómo lo logramos? Los parámetros pueden variar según la situación, pero el concepto se basa en un Threshold bajo, un Ratio alto, un Attack corto y un Release largo. La combinación de estos 4 parámetros sobre un sonido que suene justo a continuación de un elemento percusivo dará la sensación de bombeo por parte de este.</br></br>
+            
+            <p class="subtitle">¿Cómo asignarlo?</p></br>
+
+        <a class="article_image_container" href="imagenes/basico/sidechain/asignacion.jpg" data-lightbox="image-1" data-title="Routeo de Sidechain en FL Studio">
+            <img class="article_image" src="imagenes/basico/sidechain/asignacion.jpg"/>
+        </a>
+
+        <img class="article_image_mobile" src="imagenes/mobile/basico/sidechain/asignacion.jpg"/>
+
+            Para asignar la función de Sidechain en un compresor es necesario elegir una señal que funcione como Trigger (la que se ocupa de activar el mismo) y otra señal que será la que resulte afectada por el mismo.</br></br>
+
+            <p class="hide_text">En la seccion Mixer del DAW a utilizar, se deberá routear el canal que posee asignado el Trigger al canal de la señal a afectar (en el caso de ser FL Studio como se muestra en la imagen, se hace click derecho en la flecha inferior y a continuacion “Sidechain to this track”, lo cual generará un enlace entre ambos canales).</br></br></p>
+
+                <p>
+                <div class="popup_container">
+                En la seccion Mixer del
+                <span class="choose">
+                    DAW
+                    <span class="popup popup_sin_imagen">
+                        Una estación de trabajo de audio digital (EAD) o DAW por sus siglas en inglés (Digital Audio
+                        Workstation) es un sistema electrónico dedicado a la grabación y edición de audio digital
+                        por medio de un software de edición de audio.
+                    </span>
+                </span>
+                a utilizar, se deberá routear el canal que posee asignado el Trigger al canal de la señal a afectar
+                (en el caso de ser FL Studio como se muestra en la imagen, se hace click derecho en la flecha inferior
+                y a continuacion “Sidechain to this track”, lo cual generará un enlace entre ambos canales).</br>
+                </div>
+                </p>
+                
+
+            Luego, se asigna el compresor al canal de la señal a afectar y por último se habilita la seccion de Sidechain. En el caso retratado, se desplaza el número 0 hacia el 1. En el caso de tener más de un enlace de Sidechain, deberán asignarse varios compresores al canal y el número podrá incrementar para asociarlo al canal deseado, manejando así cada enlace independientemente.</br></br>
+
+            <p class="subtitle">Alternativas</p></br>
+
+            Actualmente existen diversas técnicas y maneras de lograr resultados similares al del Sidechain, igualmente de válidas que este, según la situación amerite.</br></br>
+
+            Estas pueden ser automatizaciones de volumen, ecualización y Gaters.
+        </article>
+    </div>
+
+        <footer id="footer">
+            <hr>
+            <div class="footer_container">
+                <p class="footer_data_1">2020, The Mixdown Bible</p>
+                <a class="footer_data_2" href="quienes_somos.html">¿Quiénes somos?</a>
+                <div class="redes_container">
+                    <a href="https://www.instagram.com/themixdownbible" class="instagram">
+                        <img src="imagenes/redes/instagram.svg">
+                    </a>
+                    <a href="https://www.facebook.com/TheMixdownBible" class="facebook">
+                        <img src="imagenes/redes/facebook.svg">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+<script src="lightbox2-2.11.1/jquery/jquery.js"></script>
+<script src="lightbox2-2.11.1/src/js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 350,
+      'wrapAround': true,
+      'fadeDuration': 500,
+      'positionFromTop': 225,
+      'maxWidth': 1200,
+      'albumLabel': "",
+      'imageFadeDuration': 200
+    })
+</script>
+</body>
+</html>

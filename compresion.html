@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="articulo.css">
+    <link href="lightbox2-2.11.1/src/css/lightbox.css" rel="stylesheet">
+    <title>The Mixdown Bible</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body class="body_compresion">
+    <header>
+        <div class="header_div">
+            <a class="logo" href="index.html">TMB</a>
+            <a class="mixdown" href="index.html#seccion_2">MIXDOWN</a>
+            <a class="flecha_atras" href="index.html#seccion_2"><img src="imagenes/mobile/flecha_atras.svg"></a>
+        </div>
+    </header>
+
+    <div class="titular">
+            <h1 class="titulo">COMPRESIÓN</h1>
+        <div class="separador_container">
+            <img src="imagenes/separador.png" class="separador">
+        </div>
+    </div>
+
+    <div class="head_image_container">
+        <img class="head_image" src="imagenes/basico/compresion/compre.jpg"/>
+    </div>
+
+    <div class="cartelito_container">
+        <a class="fb_blanco" href="https://www.facebook.com/TheMixdownBible">
+            <img src="imagenes/redes/facebook_blanco.svg">
+        </a>
+        <a class="ig_blanco" href="https://www.instagram.com/themixdownbible">
+            <img src="imagenes/redes/instagram_blanco.svg">
+        </a>
+        <a class="cartelito">
+            <img src="imagenes/cartelito.jpg">
+        </a>
+    </div>
+
+    <div class="articulo">
+        <p class="date">Jueves 29 de Septiembre, 2020&nbsp;<span class="autor"> |&nbsp; Agustín Sztrajman</span></p>
+        <p class="autor_mobile">Agustín Sztrajman</p>
+        <article>
+            ¿Qué es un compresor? Según Wikipedia: “En el campo del sonido profesional, un compresor es un procesador
+            electrónico de sonido destinado a reducir el margen dinámico de la señal sin que se note demasiado su
+            presencia. Esta tarea se realiza reduciendo la ganancia del sistema, cuando la señal supera un determinado
+            umbral.”</br></br>
+
+            Ahora bien, es necesario tener ciertos cuidados al leer esta definición ya que es algo vaga y no del todo
+            acertada.</br></br>
+
+            Comencemos por tratar de entender el concepto de “margen o rango dinámico”. Este refiere a la diferencia entre el
+            punto con el valor mínimo y el máximo de una señal de audio, medido en decibeles (dB). A mayor diferencia
+            entre ambos puntos, mayor rango dinámico.</br></br>
+        </article>
+
+        <a class="article_image_container" href="imagenes/basico/compresion/rango_dinamico.jpg" data-lightbox="image-1" data-title="Comparación de rango dinámico: pre y post compresión">
+            <img class="article_image" src="imagenes/basico/compresion/rango_dinamico.jpg"/>
+        </a>
+
+        <img class="article_image_mobile" src="imagenes/mobile/basico/compresion/rango_dinamico.jpg">
+
+        <article>
+            En este caso particular, el resultado de la compresión en cuanto al rango dinámico, ha sido reducirlo en 8 dB.
+            ¿Por qué? Muy sencillo, el valor mínimo de la señal de audio ha sido incrementado de -35 dB a -27 dB.</br></br>
+            
+            Una vez entendido este concepto fundamental acerca de la compresión, podemos pasar a los distintos usos y
+            objetivos de la misma.</br></br>
+
+            Si bien es cierto que en algunos casos queremos que la presencia del compresor sea mínima y con el único
+            objetivo de reducir el rango dinámico, en otros deseamos todo lo contrario.</br></br>
+
+            Este es el caso en el cual entra en juego la “esencia” de cada compresor, sea analógico o digital. Cada uno
+            de ellos analiza el audio entrante o “Input” de una manera particular y única, lo cual da como resultado una
+            salida o “Output” distinta para cada caso, aportando aquella esencia característica. </br></br></br>
+        </article>
+
+        <p class="subtitle">¿Cuáles son sus parámetros principales y cómo utilizarlos?</p>
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/t6_mtfkt3a8" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <article>
+            No todos los compresores poseen la misma cantidad de parámetros, así como los nombres para los mismos, sin embargo, estos 8 suelen estar en la mayoría de ellos.</br></br>
+            <p>
+                <div class="popup_container">
+                <span class="subtitle">Threshold:</span> determina el
+                <span class="choose">
+                    umbral
+                    <span class="popup popup_sin_imagen">
+                        Parte inferior de una puerta o entrada. Se utiliza por extensión para indicar «entrada», «valor mínimo» o «lugar por el que pasar» en un sentido más general.
+                    </span>
+                </span>
+                de volumen sobre el cual será aplicada la compresión. Una vez sobrepasado el umbral, el compresor se activará, reduciendo la amplitud de la señal entrante.</br></br>
+                </div>
+            </p>
+
+            <span class="hide_text"><span class="subtitle">Threshold:</span> determina el umbral de volumen sobre el cual será aplicada la compresión. Una vez sobrepasado el umbral, el compresor se activará, reduciendo la amplitud de la señal entrante.</br></br></span>
+            <span class="subtitle">Knee:</span> regula la transición al momento de activar la compresión, pudiendo ser más suave o más brusca, según el valor o modo establecido.</br></br>
+            <span class="subtitle">Ratio:</span> representa la cantidad de reducción de ganancia sobre la señal. Una vez sobrepasado el Threshold, el Ratio se ocupará de decidir cuánta compresión aplicar sobre la misma. Se maneja en base a proporciones (2:1, 5:1, 8:1, etc.), es decir, cuántos dB terminan resultantes en el Output, respecto de la cantidad original. Un valor establecido de 5:1 significará que de cada 5dB de la señal original, obtendremos 1.</br></br>
+            <span class="subtitle">Attack:</span> permite decidir cuánto tardará el compresor en activarse, una vez sobrepasado el Threshold. Posee valores medidos en unidades de “ms” o milisegundos. Un valor alto dará la sensación de una compresión más gradual, mientras que un valor bajo será más notorio y tenderá a producir distorsión sobre la señal debido al poco tiempo dado para reducir su amplitud.</br></br>
+            <span class="subtitle">Release:</span> estipula el tiempo que tarda el compresor en volver a desactivarse, una vez realizada la compresión. Al igual que el Attack, posee valores medidos en unidades de milisegundos. Un valor alto hará que la señal regrese lentamente a su estado original, mientras que un valor bajo lo hará más de inmediato.</br></br>
+            <span class="subtitle">Lookahead:</span> otorga la posibilidad de activar el compresor incluso algunos milisegundos antes de que la señal sobrepasante del Threshold entre por el mismo. Lo que realmente hace para lograr tal cometido es atrasar la señal entrante, dandole la oportunidad al compresor de activarse de antemano. No es un parámetro tan habitual como los demás.</br></br>
+            <span class="subtitle">Gain y Auto-Gain:</span> es utilizado para devolver, disminuir o compensar el nivel a la señal de audio luego de aplicada la compresión. Si el compresor posee activada una opcion de Auto-Gain, estará compensando automáticamente la pérdida de volumen.</br></br>
+            <span class="subtitle">Mix:</span> determina el porcentaje de aplicación sobre la señal. A los extremos de este parámetro suelen aparecer las palabras “Dry” (seco) y “Wet” (mojado), representando el 0% y el 100% respectivamente. Cuando el porcentaje aplicado no es ninguno de los extremos (digamos 50%), parte de la señal entrante quedará sin procesar y parte entrará como Input al compresor. En estos casos se considera que se trata de una “compresión paralela o New York”.
+        </article>
+    </div>
+
+        <footer id="footer">
+            <hr>
+            <div class="footer_container">
+                <p class="footer_data_1">2020, The Mixdown Bible</p>
+                <a class="footer_data_2" href="quienes_somos.html">¿Quiénes somos?</a>
+                <div class="redes_container">
+                    <a href="https://www.instagram.com/themixdownbible" class="instagram">
+                        <img src="imagenes/redes/instagram.svg">
+                    </a>
+                    <a href="https://www.facebook.com/TheMixdownBible" class="facebook">
+                        <img src="imagenes/redes/facebook.svg">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+<script src="lightbox2-2.11.1/jquery/jquery.js"></script>
+<script src="lightbox2-2.11.1/src/js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 350,
+      'wrapAround': true,
+      'fadeDuration': 500,
+      'positionFromTop': 225,
+      'maxWidth': 1200,
+      'albumLabel': "",
+      'imageFadeDuration': 200
+    })
+</script>
+</body>
+</html>
