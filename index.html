@@ -46,7 +46,16 @@
                 }
             }
         }
-
+	function enterKey () {
+            document.getElementById("myForm").onkeypress = function(e) {
+                var key = e.charCode || e.keyCode || 0;     
+                if (key == 13) {
+                    e.preventDefault();
+                    document.getElementById('seccion_2').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+                }
+            }
+        }
+	    
         function blueFunction () {
             if (window.matchMedia("(min-width : 480.02px)").matches) {
             const hover = document.getElementById('basic_square');
@@ -142,7 +151,7 @@
     <header>
         <div class="header_div">
             <a class="logo" onclick="smoothScrollTMB()">TMB</a>
-            <form class="search_form">
+            <form class="search_form" id="myForm" onkeypress="enterKey()">
                 <input type="text" name="search_input" class="buscar" id="myInput" onkeyup="searchFilter()">
                 <img class="lupa" src="imagenes/lupa.svg">
             </form>
